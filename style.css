@@ -459,7 +459,7 @@ input:active, input:focus {
    box-shadow: 4px 2px 4px 2px rgba(128, 128, 128, 0.5);
   flex: 1;
   padding: 50px;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 #galleryItem1 {
   margin-left: -30px;
