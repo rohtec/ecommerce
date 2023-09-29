@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>payment</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<div class="newPay">
+	<div class="cover"></div>
+     <div class="payment">
+            <span class="close" onclick="playClickSound()"><a href="C:\Users\Dell\Desktop\Codewolf-redsign\Landing Page\index.html#product" target="_self">X</span>
+            <div class="frame">
+              <div class="frame1">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Full Name</label>
+            <input type="text" placeholder="John Doe" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+             </div>
+            <div class="frame2">
+            	<div class="top">
+             <h1 class="payTitle">Card Information</h1>
+             <div class="cardIcons">
+             <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+             <img src="./img/master.png" alt="" width="40" class="cardIcon">
+         </span>
+             </div>
+         </div>
+            <label>Card Name</label>
+            <input type="password" class="payInput" placeholder="Matthew Esther">
+            <label>Card Number</label>
+            <input type="text" class="payInput" placeholder="4111 1111 1111 1111">
+                <div class="cardInfo">
+                	<div class="first">
+                <label>Expiry</label>
+                <input type="text" placeholder="mm/yyyy" id="year"></div>
+                <div class="second">
+                <label>CVV</label>
+                <input type="text" placeholder="123" id="cv" >
+            </div>
+                </div>
+            </div>
+           </div>
+            <button class="payButton" onclick="playClickSound()">Check Out!</button>
+        </div>
+    </div>
+    <audio id="click-sound">
+                <source src="click.mp3" type="audio/mp3">
+            </audio>
+    <script src="script.js"></script>
+</body>
+</html>

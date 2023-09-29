@@ -1,0 +1,237 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.newPay {
+    background-image: url("img/back.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+	height: 99vh;
+	display: flex;
+	align-items: center;
+
+	}
+	.cover {
+		background-color: rgba(0, 0, 0, 0.8);
+/*		border: 1px solid red;*/
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+	}
+.payment {
+	z-index: 99;
+	background-color: white;
+    margin: auto;
+/*    box-shadow: 4px 2px 4px 2px rgba(128, 128, 128, 0.5);*/
+}
+.frame {
+/*	border: 1px solid green;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.frame2 {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+.frame1 {
+/*	border: 1px solid red;*/
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+    padding-right: 30px;
+    border-top: none;
+	border-left: none;
+	border-right: 1px solid gray;
+	border-bottom: none;
+}
+.payTitle {
+	color: gray;
+	font-weight: 400;
+	font-size: 18px;
+	font-family: Poppins;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+label {
+	margin: 10px 0px;
+	color: rgba(0, 0, 0, 0.9);
+	font-weight: 400;
+	font-size: 16px;
+	font-family: Poppins;
+}
+input{
+	padding: 15px 0 5px 0;
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-weight: 400;
+	font-size: 22px;
+	font-family: Poppins;
+	border-bottom: 1px solid gray;
+}
+input::placeholder {
+	font-weight: 400;
+	font-size: 22px;
+	font-family: Poppins;
+}
+input:active, input:focus {
+
+    border: 1px solid green;
+    border-radius: 5px;
+    
+}
+.cardIcon {
+	margin-top: 20px;
+}
+.cardInfo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.first, .second {
+	display: flex;
+	flex-direction: column;
+}
+#cv, #year {
+	padding-left: 20px;
+}
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+.payButton {
+	margin-top: 30px;
+    height: 60px;
+    width: 100%;
+    font-weight: 400;
+	font-size: 20px;
+	font-family: Trebuchet MS;
+  background-color: #369e62;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.payButton:hover {
+	background-color: gray;
+	font-size: 22px;
+}
+.close {
+  width: 30px;
+  height: 30px;
+  float: right;
+  position: absolute;
+  background-color: white;
+  color: black;
+  z-index: 99;
+  top: 16.7%;
+  right: 9%;
+  box-shadow: 4px 2px 4px 2px rgba(128, 128, 128, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+}
+a {
+	text-decoration: none;
+}
+a:active {
+	color: black;
+}
+
+@media screen and (max-width:500px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .frame, .payment {
+  	display: flex;
+  	flex-direction: column;
+  }
+  .frame1, .frame2 {
+  	width: 80vw ;
+  	height: 45vh;
+    }
+   .newPay {
+   	display: flex;
+   	flex-direction: column;
+   }
+   .first, .second {
+   	width: 35vw;
+   }
+   .payment {
+   	background-color: white;
+   }
+.payTitle {
+	color: gray;
+	font-weight: 400;
+	font-size: 18px;
+	font-family: Poppins;
+	margin-top: 20px;
+}
+label {
+	margin: 10px 0px;
+	color: rgba(0, 0, 0, 0.9);
+	font-weight: 400;
+	font-size: 16px;
+	font-family: Poppins;
+}
+input{
+	padding: 5px 0 5px 0;
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-weight: 400;
+	font-size: 16px;
+	font-family: Poppins;
+	border-bottom: 1px solid gray;
+}
+input::placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	font-family: Poppins;
+}
+#cv, #year {
+	padding-left: 5px;
+}
+.cardIcon {
+	margin-top: 12px;
+    }
+
+  .close {
+  width: 30px;
+  height: 30px;
+  float: right;
+  position: absolute;
+  background-color: white;
+  color: black;
+  z-index: 99;
+  top: 1%;
+  right: 9%;
+  box-shadow: 4px 2px 4px 2px rgba(128, 128, 128, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+}
+.payButton {
+	margin-top: -20px;
+    height: 60px;
+    width: 100%;
+    font-weight: 400;
+	font-size: 20px;
+	font-family: Trebuchet MS;
+  background-color: #369e62;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+}
