@@ -462,7 +462,7 @@ input:active, input:focus {
   margin-right: 5px;
 }
 #galleryItem1 {
-  margin-left: -30px;
+/*   margin-left: -30px; */
 }
 
 .galleryImg {
@@ -537,7 +537,7 @@ input:active, input:focus {
   animation-name: plays;
   animation-duration: 10s;
   animation-delay: 5s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 3;
 }
 
 @keyframes plays {
